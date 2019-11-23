@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/', 'Dashboard@index');
+Route::get('/', function () {
+    return view('welcome');
+});
